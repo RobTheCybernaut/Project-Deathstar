@@ -256,6 +256,7 @@ This repository includes build and reference guides for:
 - Active Directory and attack lab setup
 - self-hosted services
 - Tesla P40 passthrough and AI stack
+- TheHive CT104 Proxmox deployment
 
 ---
 

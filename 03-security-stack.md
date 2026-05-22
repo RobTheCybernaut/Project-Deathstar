@@ -105,6 +105,10 @@ Key functions:
 
 Even in a home lab, this is useful because it shifts the mindset from “I saw an alert” to “I worked a case.”
 
+For Project Deathstar, the current design target is CT104: a dedicated Debian 12 Proxmox LXC on LAB_DMZ (20) running a standalone TheHive deployment. StrangeBee’s current package-install documentation supports Debian 12, Java 11, Cassandra 4.1.x, and Elasticsearch 7.11.x through 9.1.x for recent TheHive 5 releases. Their hardware guidance for small package-based deployments starts around 3 CPU cores / 4 GB RAM per major service at under 10 concurrent users, with 100 GB storage recommended for most use cases.
+
+That makes CT104 a good fit as its own container rather than something bolted onto an existing node. In Deathstar, TheHive should sit behind the internal management/access model, receive escalated alerts from Splunk-driven workflows, and act as the place where detections become analyst notes, tasks, and case records.
+
 ## Current Active Components
 
 Based on the repository README, these components are already active:

@@ -49,7 +49,7 @@ These systems are part of the intended security architecture but are not clearly
 | ID | Type | Hostname / Role | VLAN | Status | Notes |
 |---|---|---|---|---|---|
 | CT102 | LXC or VM | wazuh | LAB_DMZ (20) | Planned / expanding | Host monitoring, FIM, vulnerability visibility |
-| CT104 | LXC or VM | thehive | LAB_DMZ (20) | Planned / integration phase | Case management and incident workflow |
+| CT104 | LXC | thehive | LAB_DMZ (20) | Planned next | Case management and incident workflow; recommended Debian 12 LXC with dedicated storage and JVM-backed services |
 
 ## Planned Active Directory and Testing Systems
 
